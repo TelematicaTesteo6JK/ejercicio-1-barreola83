@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 /*
@@ -24,11 +25,23 @@ void casos_de_prueba(){
 
     cout << "TEST CASES" << endl;
     // Agrega tus casos de prueba
+		cout << " TestData  |";
+		cout << " Expected  |";
+		cout << " Obtained  |";
+		cout << " Pass/Fail |";
+
+		//EP
+		cout << "      4      " << "     40     " << "     " << pago_estacionamiento(4) <<"     " << "    " << evaluate(40, pago_estacionamiento(4)) << "    ";
+
 
 
 
     cout << endl;
 
+}
+
+string evaluate(float fValue, float sValue){
+	if(fValue == sValue) ? return "Pass" : return "Fail";
 }
 
 int main()
